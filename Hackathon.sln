@@ -22,6 +22,7 @@ Global
 		{89044FC4-4CA3-48EA-860E-54C1622F5548}.Release|x86.ActiveCfg = Release|Win32
 		{89044FC4-4CA3-48EA-860E-54C1622F5548}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
+Privet
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
