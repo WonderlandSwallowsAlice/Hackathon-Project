@@ -109,6 +109,8 @@ def make_SEL():
     etch.right(90)
     etch.forward(120)
 
+def make_circle():
+    etch.circle(100)
 
 # Keyboard bindings
 screen.listen()
