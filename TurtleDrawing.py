@@ -113,6 +113,19 @@ def make_SEL():
     etch.right(90)
     etch.forward(120)
 
+def automatic_drawing():
+    print("How many degree to the left do you want to go?")
+    left = input()
+    print("How many degree to the right do you want to go? ")
+    right = input()
+    print("How many interations of drawing the shape do you want? ")
+    interations = input()
+    for _ in range(int(interations)): 
+            etch.left(int(left)) 
+            etch.forward(int(left))
+            etch.right(int(right))
+            etch.backward(int(right)) 
+
 # Keyboard bindings
 screen.listen()
 screen.onkey(move_forward, "Up")
@@ -126,6 +139,7 @@ screen.onkey(make_star, "4")
 screen.onkey(make_flower, "5")
 screen.onkey(make_SEL, "6")
 screen.onkey(make_circle, "1")
+screen.onkey(automatic_drawing, "7")
 
 
 # Keep the window open
