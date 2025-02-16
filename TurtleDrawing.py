@@ -1,5 +1,16 @@
 import turtle
 
+# gather user inputs for height, width, background color, and turtle/line color
+data = input("Please enter the height and width separated by a space: ").split()
+Height = int(data[0])
+Width = int(data[1])
+
+bgcolor = input("Please enter the color of your background: ")
+
+ttcolor = input("Please enter the color of your turtle: ")
+
+
+
 # Setup the screen
 screen = turtle.Screen()
 screen.title("Etch A Sketch")
