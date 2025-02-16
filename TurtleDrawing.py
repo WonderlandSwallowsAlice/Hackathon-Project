@@ -40,6 +40,78 @@ def turn_right():
 def clear_screen():
     etch.clear()
 
+def make_circle():
+    etch.circle(100)
+
+def make_square():
+    for _ in range(4):
+        etch.forward(100)
+        etch.right(90)
+
+def make_hexagon():
+    for _ in range(6):
+        etch.forward(100)
+        etch.right(60)
+    
+
+def make_star():
+    for _ in range(5):
+        etch.forward(100)
+        etch.right(144)
+    
+    
+def make_flower():
+    for _ in range(12):
+        etch.right(30)
+        etch.forward(40)
+        etch.left(120)
+        etch.forward(40)
+        etch.left(120)
+        etch.forward(40)
+        etch.left(120)
+        etch.forward(40)
+
+def make_SEL():
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.right(90)
+    etch.forward(60)
+    etch.right(90)
+    etch.forward(60)
+    etch.right(180)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.right(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(120)
+    etch.right(90)
+    etch.forward(60)
+    etch.right(180)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.right(180)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(60)
+    etch.left(90)
+    etch.forward(120+60)
+    etch.right(180)
+    etch.forward(60)
+    etch.right(90)
+    etch.forward(120)
+
 # Keyboard bindings
 screen.listen()
 screen.onkey(move_forward, "Up")
