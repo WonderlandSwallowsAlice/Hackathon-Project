@@ -21,7 +21,8 @@ screen.setup(width=600, height=600)
 
 # Create the turtle
 etch = turtle.Turtle()
-etch.shape(ttcolor)
+etch.shape("turtle")
+etch.color(ttcolor) 
 etch.speed(0)
 
 # Functions to move the turtle
