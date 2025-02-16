@@ -17,7 +17,7 @@ movespeed = input("Please enter how many units you would like the turtle to move
 screen = turtle.Screen()
 screen.title("Etch A Sketch")
 screen.bgcolor(bgcolor)
-screen.setup(width=600, height=600)
+screen.setup(Width, Height)
 
 # Create the turtle
 etch = turtle.Turtle()
