@@ -9,7 +9,9 @@ bgcolor = input("Please enter the color of your background: ")
 
 ttcolor = input("Please enter the color of your turtle: ")
 
+turnspeed = input("Please enter how many units you would like the turtle to turn at a time: ")
 
+movespeed = input("Please enter how many units you would like the turtle to move at a time: ")
 
 # Setup the screen
 screen = turtle.Screen()
@@ -24,16 +26,16 @@ etch.speed(0)
 
 # Functions to move the turtle
 def move_forward():
-    etch.forward(10)
+    etch.forward(int(movespeed))
 
 def move_backward():
-    etch.backward(10)
+    etch.backward(int(movespeed))
 
 def turn_left():
-    etch.left(10)
+    etch.left(int(turnspeed))
 
 def turn_right():
-    etch.right(10)
+    etch.right(int(turnspeed))
 
 def clear_screen():
     etch.clear()
@@ -45,6 +47,7 @@ screen.onkey(move_backward, "Down")
 screen.onkey(turn_left, "Left")
 screen.onkey(turn_right, "Right")
 screen.onkey(clear_screen, "c")
+screen.onkey(draw_circle, "1")
 
 # Keep the window open
 turtle.done()
