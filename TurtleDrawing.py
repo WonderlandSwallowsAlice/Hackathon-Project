@@ -14,12 +14,12 @@ ttcolor = input("Please enter the color of your turtle: ")
 # Setup the screen
 screen = turtle.Screen()
 screen.title("Etch A Sketch")
-screen.bgcolor("white")
+screen.bgcolor(bgcolor)
 screen.setup(width=600, height=600)
 
 # Create the turtle
 etch = turtle.Turtle()
-etch.shape("turtle")
+etch.shape(ttcolor)
 etch.speed(0)
 
 # Functions to move the turtle
