@@ -119,7 +119,13 @@ screen.onkey(move_backward, "Down")
 screen.onkey(turn_left, "Left")
 screen.onkey(turn_right, "Right")
 screen.onkey(clear_screen, "c")
-screen.onkey(draw_circle, "1")
+screen.onkey(make_square, "2")
+screen.onkey(make_hexagon, "3")
+screen.onkey(make_star, "4")
+screen.onkey(make_flower, "5")
+screen.onkey(make_SEL, "6")
+screen.onkey(make_circle, "1")
+
 
 # Keep the window open
 turtle.done()
